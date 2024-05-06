@@ -1,30 +1,115 @@
-
 * {
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
+
 
 .nanum-myeongjo-regular {
     font-family: "Nanum Myeongjo", serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
-  
-  .container{
+
+.container {
     display: flex;
     flex-direction: row;
-  }
+}
 
-  img {
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+div.sign-up-form{
+    margin-top: 5vh;
+}
+
+img {
     height: 100vh;
-    width:calc(100vw * 1 / 3) ;
-  }
+    width: calc(100vw / 3);
+    opacity: 0.9;
+}
 
-  .Header {
-    height: calc(1 / 3 * 100vh);
+.Header {
+    height: calc(100vh / 3);
     box-sizing: border-box;
-    padding: (5em);
-    background-color:#FFFFEA;
     text-align: center;
-  }
+    background-color: #fffdcd;
+}
+
+.Header p {
+    font-size: 2vw;
+    padding-top: 15vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-bottom: 5vh;
+
+}
+
+
+footer {
+    flex-grow: 1;
+    background-color: #ff9c48;
+
+}
+
+legend {
+    font-weight: bold;
+    float: left;
+    margin-bottom: .5em;
+    width: 100%
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding-left: 10vw;
+}
+
+div.form-items {
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+
+}
+
+label {
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+input {
+    height: 1.5rem;
+    width: 15rem;
+}
+
+.button {
+    padding-left: 10vw;
+
+}
+
+button{
+    border-radius: 0.25rem;
+    width: 10rem;
+    height: 2rem;
+    background-color:#604e12;
+    border: solid #604e12;
+    color: white;
+}
+
+button:hover{
+    color:wheat; 
+}
+
+.column-1, .column-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
