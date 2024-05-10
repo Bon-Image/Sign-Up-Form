@@ -12,26 +12,19 @@
 </head>
 
 <body>
-
-
     <div class="main-container">
-
-
         <div class="background-image-logo">
             <div class="logo">
                 <img id="logo" src="images/odin-lined.png" alt="Odin Logo">
             </div>
             <span id="copyright">
-                Photo by <a href="https://unsplash.com/@pop_heart">Marra</a>
+                Photo by <a aria-label="Background Image Creator's Page" "https://unsplash.com/@pop_heart">Marra</a>
                 on
-                <a
+                <a aria-label="Background Image Original Link"
                     href="https://unsplash.com/photos/a-chair-sitting-in-front-of-an-orange-wall-m7fT6OreZfI">Unsplash</a>
             </span>
         </div>
-
-
         <div class="content">
-
             <div class="header">
                 <p>
                     Embark on a playful journey through our demo world. Please enter your details below to unlock a
@@ -40,67 +33,52 @@
                     explore make-believe?
                 </p>
             </div>
-
-            <div class="sign-up-form">
-                <form action="" method="post">
-                    <fieldset>
-                        <legend>Sign-Up Form</legend>
-                        <div class="form-items">
-
-
-                            <div class="column-1">
-                                <p>
-                                    <label for="first-name"> First Name</label>
-                                    <input type="text" id="first-name" name="first-name" required>
-                                </p>
-                                <p>
-                                    <label for="e-mail">Email</label>
-                                    <input type="email" id="e-mail" name="email" required>
-                                </p>
-                                <p>
-                                    <label for="password">Password</label>
-                                    <input type="password" id="password" , name="password" required>
-                                </p>
-                            </div>
-
-
-                            <div class="column-2">
-                                <p>
-                                    <label for="last-name">Last Name</label>
-                                    <input type="text" id="last-name" name="last-name" required>
-                                </p>
-                                <p>
-                                    <label for="phone-number">Phone Number</label>
-                                    <input type="number" id="phone-number" name="phone-number">
-                                </p>
-                                <p>
-                                    <label for="confirm-password">Confirm Password</label>
-                                    <input type="password" id="confirm-password" name="confirm-password" required>
-                                </p>
-                            </div>
-
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Sign-Up Form</legend>
+                    <div class="form-items">
+                        <div class="column-1">
+                            <p>
+                                <label for="first-name"> First Name</label>
+                                <input type="text" id="first-name" name="first-name" required>
+                            </p>
+                            <p>
+                                <label for="e-mail">Email</label>
+                                <input type="email" id="e-mail" name="email" required>
+                            </p>
+                            <p>
+                                <label for="password">Password</label>
+                                <input type="password" id="password" , name="password" required>
+                            </p>
                         </div>
-
-
-                    </fieldset>
-
-                    <div class="button">
-                        <button>Create My Account</button>
-                        <p>
-                            <span>I have an account</span>
-                            <a>Take me to login page</a>
-                        </p>
+                        <div class="column-2">
+                            <p>
+                                <label for="last-name">Last Name</label>
+                                <input type="text" id="last-name" name="last-name" required>
+                            </p>
+                            <p>
+                                <label for="phone-number">Phone Number</label>
+                                <input type="number" id="phone-number" name="phone-number">
+                            </p>
+                            <p>
+                                <label for="confirm-password">Confirm Password</label>
+                                <input type="password" id="confirm-password" name="confirm-password" required>
+                            </p>
+                        </div>
                     </div>
-                </form>
-            </div>
+                </fieldset>
+                <div class="button">
+                    <button aria-label="Form Submission Button">Create My Account</button>
+                    <p>
+                        <span>I have an account</span>
+                        <a aria-label="Login Page">Take me to login page</a>
+                    </p>
+                </div>
+            </form>
             <footer>
-
             </footer>
         </div>
-
     </div>
-
-
 </body>
 
 </html>

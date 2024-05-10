@@ -74,11 +74,6 @@ div.logo{
 }
 
 
-div.sign-up-form{
-    
-    margin-top: 5vh;  /* Prevents the form to appear right after the header content */ 
-}
-
 
 #logo {
     height: 20vh;
@@ -157,6 +152,7 @@ form {
 
     display: flex;
     flex-direction: column;
+    margin-top: 5vh;  /* Prevents the form to appear right after the header content */ 
     gap: 5vh;
 
 }
