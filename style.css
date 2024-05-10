@@ -80,7 +80,7 @@
     width: 10vw;
 }
 
-.header {
+header {
 
     height: calc(100vh / 3);
     box-sizing: border-box;
@@ -95,7 +95,7 @@
 
 
 
-.header p {
+header p {
 
     color: #604e12;
 
