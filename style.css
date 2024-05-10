@@ -2,6 +2,8 @@
 
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
 
@@ -21,6 +23,7 @@
     flex-direction: row;
 
 }
+
 /* Right Column */
 .content {
 
@@ -39,6 +42,7 @@
     position: relative; /* Because we need to overlay the copyright and logo sections on this . */
     height: 100vh;
     width: 100vw;
+
 }
 
 #copyright{
@@ -71,35 +75,61 @@ div.logo{
 
 
 div.sign-up-form{
-    margin-top: 5vh;
+    
+    margin-top: 5vh;  /* Prevents the form to appear right after the header content */ 
 }
 
-#background-image {
-    height: 100vh;
-    width: calc(100vw / 3);
-    opacity: 0.9;
-    max-width:500px ;
-}
 
 #logo {
     height: 20vh;
     width: 10vw;
 }
 
-.Header {
+.header {
+
     height: calc(100vh / 3);
     box-sizing: border-box;
     text-align: center;
     background-color: #fffdcd;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10Vh;
+    font-size: 1em;
+    overflow: hidden;
 }
 
-.Header p {
-    font-size: 2vw;
-    padding-top: 15vh;
-    padding-left: 5vh;
-    padding-right: 5vh;
-    padding-bottom: 5vh;
 
+
+.header p {
+
+    color: #604e12;
+
+}
+    
+
+.button {
+    padding-left: 10vw; /* The submit button aligns with the the rest of the form content */ 
+
+}
+
+
+div.form-items {
+
+    /* We use flex to organize the form items into two columns */
+    display: flex;
+    flex-direction: row;
+    gap:5vh;
+}
+
+.column-1, .column-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.column-2 {
+
+    padding-right: 2vw;
 }
 
 
@@ -112,7 +142,7 @@ footer {
 legend {
     font-weight: bold;
     float: left;
-    margin-bottom: .5em;
+    margin-bottom: 1em;
     width: 100%
 }
 
@@ -123,60 +153,68 @@ fieldset {
     padding-left: 10vw;
 }
 
-div.form-items {
+form {
+
     display: flex;
-    flex-direction: row;
-    gap: 10vw;
+    flex-direction: column;
+    gap: 5vh;
+
+}
+
+input {
+
+    height: 2rem;
+    width: 20rem;
+    border-radius: 5px;
+    border-color: antiquewhite;
 
 }
 
 label {
+
     display: block;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 5vh;
-}
-
-input {
-    height: 1.5rem;
-    width: 15rem;
-}
-
-.button {
-    padding-left: 10vw;
 
 }
+
 
 button{
+
     border-radius: 0.25rem;
     width: 10rem;
     height: 2rem;
     background-color:#604e12;
     border: solid #604e12;
     color: white;
+
 }
 
 button:hover{
+
     color:wheat; 
+
 }
 
-.column-1, .column-2 {
-    display: flex;
-    flex-direction: column;
-    gap: 2vh;
+.button p {
+
+    margin-bottom: 3vh;
+    margin-top: 2vh;
+
 }
 
-a{
+a {
+
     color:orange;
+
 }
 
 a:active {
+
     color: orange;
+
 }
 
-a:hover{
+a:hover {
+
     color: #604e12;
+
 }
